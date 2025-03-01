@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Timer and Stopwatch</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .clock {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .timer, .stopwatch{
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .date {
+            font-size: 0.5em;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock" id="clock">
+        <div id="time"></div>
+        <div class="date" id="date"></div>
+        <button onclick="toggleFormat()">轉換12或24小時制</button>
+    </div>
+
+    <div class="timer">
+        <h3>Timer</h3>
+        <input type="number" id="timerInput" placeholder="Minutes" min="0">
+        <button onclick="startTimer()">Start Timer</button>
+        <div id="timerDisplay"></div>
+    </div>
+
+    <div class="stopwatch">
+        <h3>Stopwatch</h3>
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+        <div id="stopwatchDisplay">00:00:00</div>
+    </div>
+
+    <script>
+        let is24HourFormat = true;
+        let stopwatchInterval;
+        let stopwatchTime = 0;
+
+        function updateClock() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const timeString = is24HourFormat ? now.toLocaleTimeString('en-GB') : now.toLocaleTimeString('en-US');
+            const dateString = now.toLocaleDateString(undefined, options);
+
+            document.getElementById('time').textContent = timeString;
+            document.getElementById('date').textContent = dateString;
+        }
+
+        function toggleFormat() {
+            is24HourFormat = !is24HourFormat;
+            updateClock();
+        }
+
+        function startTimer() {
+            const minutes = parseInt(document.getElementById('timerInput').value);
+            let timeLeft = minutes * 60;
+            const timerDisplay = document.getElementById('timerDisplay');
+
+            const timerInterval = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    timerDisplay.textContent = "Time's up!";
+                } else {
+                    timeLeft--;
+                    const minutes = Math.floor(timeLeft / 60);
+                    const seconds = timeLeft % 60;
+                    timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                }
+            }, 1000);
+        }
+
+        function startStopwatch() {
+            stopwatchInterval = setInterval(() => {
+                stopwatchTime++;
+                const hours = Math.floor(stopwatchTime / 3600);
+                const minutes = Math.floor((stopwatchTime % 3600) / 60);
+                const seconds = stopwatchTime % 60;
+                document.getElementById('stopwatchDisplay').textContent = 
+                    `${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            }, 1000);
+        }
+
+        function stopStopwatch() {
+            clearInterval(stopwatchInterval);
+        }
+
+        function resetStopwatch() {
+            clearInterval(stopwatchInterval);
+            stopwatchTime = 0;
+            document.getElementById('stopwatchDisplay').textContent = "00:00:00";
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>

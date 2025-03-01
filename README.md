@@ -1,2 +1,2 @@
 # hi
-[anaconda](https://anaconda.cloud/))
+[anaconda](https://anaconda.cloud/)

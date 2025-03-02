@@ -2,7 +2,8 @@
 [anaconda](https://anaconda.cloud/)
 
 # code for draw
-`def initialize_display():
+```
+def initialize_display():
 # Define the bit pattern for an 4x4 display
   bit_pattern = "1111100110011111"
   # Initialize an 4x4 display list
@@ -33,4 +34,4 @@ def main():
   print_display(display)
 
 main()
-`
+```

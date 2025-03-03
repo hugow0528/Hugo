@@ -14,5 +14,5 @@ You can view the digital clock with timer and stopwatch [here](https://github.co
 [https://github.com/LioQing/ICT-Notes](https://github.com/LioQing/ICT-Notes) <br>
 [https://github.com/hkoi/dse-exercises](https://github.com/LioQing/ICT-Notes)<br>
 [python tutor](https://pythontutor.com/python-compiler.html#mode=edit)
-## Copyright
+### Copyright
 © 2025 Hugowong. All rights reserved.

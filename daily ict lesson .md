@@ -2,7 +2,7 @@
 
 1. [Code for Drawing](#code-for-drawing)
 2. [Find HCF](#find-hcf)
-3. [Bubble Sort (Ascending)](#bubble-sort-ascending)
+3. [Bubble Sort (Ascending)](#Bubble sort (ASSCENDING))
 4. [Bubble Sort in Python (AI Teach)](#bubble-sort-in-python-ai-teach)
 
 

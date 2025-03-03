@@ -56,3 +56,21 @@ b = 9
 result = func(a, b)
 print(result)
 ```
+
+# Bubble sort (ASSCENDING)
+unsorted=[1,4,2,3] <BR>
+1st pass : 1,4,2,3 <BR>
+2nd pass : 1,2,4,3 <BR>
+3nd pass : 1,2,3,4 <BR>
+
+```
+def bubble_sorted(iterable):
+    new_list = list(iterable)
+    list_len = len(new_list)
+    for i in range(list_len-1):
+        for j in range(list_len - i - 1):
+            if new_list[j] > new_list[j + 1]:
+                new_list[j], new_list[j + 1] = new_list[j + 1], new_list[j]
+    return new_list
+
+```

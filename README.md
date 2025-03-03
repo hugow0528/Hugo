@@ -39,3 +39,20 @@ def main():
 
 main()
 ```
+
+# Find HCF
+```
+def func(a, b):
+    k = min(a, b)  # Using min() instead of minimum()
+    y = 1  # Initialize y
+    for i in range(1, k + 1):
+        if a % i == 0 and b % i == 0:  # Fixed the condition (was a%1)
+            y = i
+    return y
+
+# Test the function
+a = 6
+b = 9
+result = func(a, b)
+print(result)
+```

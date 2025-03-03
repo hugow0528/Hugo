@@ -1,5 +1,4 @@
 
-```markdown
 # How to Use GitHub
 
 GitHub is a platform for version control and collaboration. Here are some basic instructions and Markdown formatting examples.

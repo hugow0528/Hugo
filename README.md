@@ -58,7 +58,7 @@ print(result)
 ```
 
 # Bubble sort (ASSCENDING)
-unsorted=[1,4,2,3] <BR>
+E.G.1:<BR>unsorted=[1,4,2,3] <BR>
 1st pass : 1,4,2,3 <BR>
 2nd pass : 1,2,4,3 <BR>
 3nd pass : 1,2,3,4 <BR>
@@ -74,3 +74,9 @@ def bubble_sorted(iterable):
     return new_list
 
 ```
+<BR>
+unsorted=[2,4,1,3]
+1st place: 2,4,1,3
+2,4,1,3
+2,1,4,3
+2,1,3,4

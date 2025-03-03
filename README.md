@@ -4,7 +4,8 @@ This is the place that I will show my program
 # Digital Clock with Timer and Stopwatch
 You can view the digital clock with timer and stopwatch [here](https://github.com/hugow0528/w_progland/blob/main/index%20(1).html).
 
-
+# how to use github 
+<a href="how to use github .md">Visit the new page</a>
 # code for draw
 ```
 def initialize_display():

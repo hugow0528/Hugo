@@ -2,9 +2,8 @@
 
 1. [Code for Drawing](#code-for-drawing)
 2. [Find HCF](#find-hcf)
-3. [Bubble Sort (Ascending)](#Bubble sort (ASSCENDING))
+3. [Bubble Sort (Ascending)](#Bubble-sort (ASCENDING))
 4. [Bubble Sort in Python (AI Teach)](#bubble-sort-in-python-ai-teach)
-
 
 # code for drawing
 ```
@@ -58,7 +57,7 @@ result = func(a, b)
 print(result)
 ```
 
-# Bubble sort (ASSCENDING)
+# Bubble sort (ASCENDING)
 E.G.1:<BR>unsorted=[1,4,2,3] <BR>
 1st pass : 1,4,2,3 <BR>
 2nd pass : 1,2,4,3 <BR>

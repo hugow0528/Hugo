@@ -102,5 +102,3 @@ This is a code block.
 ## Conclusion
 Use this guide as a reference while working on your GitHub projects. Happy coding!
 ```
-
-You can copy and paste this directly into your README.md file or any other markdown file on GitHub!

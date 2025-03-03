@@ -75,8 +75,8 @@ def bubble_sorted(iterable):
 
 ```
 <BR>
-unsorted=[2,4,1,3]
-1st place: 2,4,1,3
-2,4,1,3
-2,1,4,3
-2,1,3,4
+unsorted=[2,4,1,3]<br>
+1st place: 2,4,1,3<br>
+2,4,1,3<br>
+2,1,4,3<br>
+2,1,3,4<br>

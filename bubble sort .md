@@ -59,4 +59,4 @@ bubble_sort(arr)
 print("Sorted array:", arr)
 ```
 ## notes 
-[bubble sort](https://github.com/hugow0528/w_progland/blob/1221d38ab4bb40371aecf3c66157dbee71ddaed0/buubble%20sort_lesson.jpg)
+![bubble sort](https://github.com/hugow0528/w_progland/blob/1221d38ab4bb40371aecf3c66157dbee71ddaed0/buubble%20sort_lesson.jpg)

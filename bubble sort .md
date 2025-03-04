@@ -61,3 +61,29 @@ print("Sorted array:", arr)
 ## notes 
 ![bubble sort](https://github.com/hugow0528/w_progland/blob/1221d38ab4bb40371aecf3c66157dbee71ddaed0/buubble%20sort_lesson.jpg)
 <BR>[ppt notes](https://github.com/hugow0528/w_progland/blob/main/SortingAlgorithms.pptx)
+<br><br>
+```
+def bubble_sort(arr):
+  n = len(arr)
+  for i in range(n):
+    for j in range(n-1):
+      if arr[j] > arr[j+1]:
+        #arr[j], arr[j+1] = arr[j+1], arr[j]
+        #swap arr[j], arr[j+1]
+        tmp = arr[j]
+        arr[j] = arr[j+1]
+        arr[j+1] = tmp
+
+    print(f"After pass {i+1}: {arr}")  # Print the array after each complete pass
+
+def main():
+  import random
+  # Generate a random array of integers
+  array = [random.randint(1, 100) for x in range(6)]
+  print("Initial array:")
+  print(array)
+  bubble_sort(array)
+
+
+main()
+```

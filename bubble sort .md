@@ -59,3 +59,4 @@ bubble_sort(arr)
 print("Sorted array:", arr)
 
 #notes
+![bubble sort ](buubble sort_lesson.jpg)
